@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Details</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="">
+    <!-- Preloader -->
+    <section id="preloader" class="preloader">
+      <div class="spinner">
+        <span class="spinner-rotate"></span>
+      </div>
+    </section>
+
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- hero section -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="title">Services Details</h1>
+        <img src="assets/svg/down-half-arrow.svg" alt="Arrow" class="arrow" />
+      </div>
+    </section>
+
+    <!-- content section -->
+    <section class="services-details">
+      <div class="container">
+        <div class="service-detils-wrapper">
+          <div class="image-container">
+            <img src="" alt="Service Image" />
+          </div>
+          <h2 data-aos="fade-right" data-aos-delay="100"></h2>
+          <p data-aos="fade-right" data-aos-delay="200"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- service we provide -->
+    <section class="service-we-provide">
+      <div class="container">
+        <h4
+          class="section-title"
+          data-aos="fade-down-right"
+          data-aos-delay="100"
+        >
+          SERVICE WE PROVIDE
+        </h4>
+        <h1 data-aos="fade-up-left" data-aos-delay="200">
+          We create and execute designs <br />
+          based on brand concept
+        </h1>
+
+        <div class="cards-wrapper">
+          <div class="item-card" data-aos="flip-left" data-aos-delay="200">
+            <img src="assets/service-we-provide/item-1.png" alt="" />
+            <p>Booth Design</p>
+          </div>
+          <div class="item-card" data-aos="flip-up" data-aos-delay="300">
+            <img src="assets/service-we-provide/item-2.png" alt="" />
+            <p>Exhibition Stand Manufacturers</p>
+          </div>
+          <div class="item-card" data-aos="flip-right" data-aos-delay="400">
+            <img src="assets/service-we-provide/item-3.png" alt="" />
+            <p>In Mall Activation</p>
+          </div>
+          <div class="item-card" data-aos="flip-left" data-aos-delay="200">
+            <img src="assets/service-we-provide/item-4.png" alt="" />
+            <p>Display Stand</p>
+          </div>
+          <div class="item-card" data-aos="flip-up" data-aos-delay="300">
+            <img src="assets/service-we-provide/item-5.png" alt="" />
+            <p>Vehicle Branding</p>
+          </div>
+          <div class="item-card" data-aos="flip-right" data-aos-delay="400">
+            <img src="assets/service-we-provide/item-6.png" alt="" />
+            <p>Label Printing</p>
+          </div>
+        </div>
+
+        <a
+          href="#"
+          class="view-service-btn"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          View Service
+          <img src="assets/gif/btn-arrow.gif" alt="" class="gif" />
+        </a>
+      </div>
+    </section>
+
+    <!-- our clients -->
+    <div id="our-clients"></div>
+
+    <!-- stay connected -->
+    <div id="stay-connected"></div>
+
+    <!-- footer -->
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const service = params.get("service");
+
+      const serviceData = {
+        "brand-strategy": {
+          title: "Brand Strategy & Planning",
+          image: "assets/services/service-1.png",
+          description:
+            "Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.",
+        },
+        signages: {
+          title: "Signages",
+          image: "assets/services/service-2.png",
+          description:
+            "Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.",
+        },
+        "label-printing": {
+          title: "Label Printing",
+          image: "assets/services/service-3.png",
+          description:
+            "Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.",
+        },
+        "exhibitions-motorshows": {
+          title: "Exhibitions and Motor Shows",
+          image: "assets/services/service-4.png",
+          description:
+            "Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.",
+        },
+        "vehicle-branding": {
+          title: "Vehicle Branding",
+          image: "assets/services/service-5.png",
+          description:
+            "Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.",
+        },
+        "booth-fabrication": {
+          title: "Booth Fabrication",
+          image: "assets/services/service-6.png",
+          description:
+            "Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde omnis iste perspiciatis ut perspiciatis unde omnis iste natus.Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde Economic congresses often bring together individuals from diverse backgrounds and perspectives. Attending such an event can expose you to different ways of thinking about economic issues and help you broaden your understanding of the field.",
+        },
+      };
+
+      const data = serviceData[service];
+      if (data) {
+        document.querySelector(".service-detils-wrapper h2").textContent =
+          data.title;
+        document.querySelector(".service-detils-wrapper img").src = data.image;
+        document.querySelector(".service-detils-wrapper p").textContent =
+          data.description;
+      } else {
+        document.querySelector(".service-detils-wrapper h2").textContent =
+          "Service Not Found";
+        document.querySelector(".service-detils-wrapper p").textContent =
+          "The service you're looking for doesn't exist.";
+      }
+    </script>
+  </body>
+</html>
