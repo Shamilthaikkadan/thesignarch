@@ -24,8 +24,21 @@ function setupMobileMenuToggle() {
   const mobileMenu = document.getElementById("mobile-menu");
 
   if (toggleBtn && mobileMenu) {
-    toggleBtn.addEventListener("click", () => {
+    // Toggle menu on button click
+    toggleBtn.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent the event from bubbling to document
       mobileMenu.classList.toggle("show");
+    });
+
+    // Close menu if clicked outside
+    document.addEventListener("click", (e) => {
+      if (
+        mobileMenu.classList.contains("show") &&
+        !mobileMenu.contains(e.target) &&
+        !toggleBtn.contains(e.target)
+      ) {
+        mobileMenu.classList.remove("show");
+      }
     });
   }
 }

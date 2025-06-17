@@ -1,169 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacts</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
 
-    <!-- AOS CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacts</title>
+  <link rel="shortcut icon" href="assets/favicon/favicon.png">
 
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body class="">
-    <!-- Preloader -->
-    <section id="preloader" class="preloader">
-      <div class="spinner">
-        <span class="spinner-rotate"></span>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-84B9E8ECB2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-84B9E8ECB2');
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="">
+  <!-- Preloader -->
+  <section id="preloader" class="preloader">
+    <div class="spinner">
+      <span class="spinner-rotate"></span>
+    </div>
+  </section>
+
+  <!-- header -->
+  <div id="header"></div>
+
+  <!-- hero section -->
+  <section class="page-hero contact">
+    <div class="container">
+      <h1 class="title">Contacts</h1>
+      <img src="assets/svg/down-half-arrow.svg" alt="Arrow" class="arrow" />
+    </div>
+  </section>
+
+  <!-- details section -->
+  <section class="contact-details py-5">
+    <div class="container details-container">
+      <!-- card 1 -->
+      <div class="detail-card">
+        <img src="assets/svg/clock.svg" alt="Clock" />
+        <h2>Open hours</h2>
+        <p>Mon-Fri: 9 AM - 6 PM</p>
+        <p>Saturday: 9 AM - 4 PM</p>
+        <p>Sunday: Closed</p>
       </div>
-    </section>
-
-    <!-- header -->
-    <div id="header"></div>
-
-    <!-- hero section -->
-    <section class="page-hero contact">
-      <div class="container">
-        <h1 class="title">Contacts</h1>
-        <img src="assets/svg/down-half-arrow.svg" alt="Arrow" class="arrow" />
+      <!-- card 2 -->
+      <div class="detail-card">
+        <img src="assets/svg/location.svg" alt="Location" />
+        <h2>Address</h2>
+        <p>176 W Street, New York,</p>
+        <p>NY 10014</p>
+        <p>
+          <a href="https://www.google.com/maps?q=176+W+Street,+New+York,+NY+10014" target="_blank">
+            Check Location
+          </a>
+        </p>
       </div>
-    </section>
+      <!-- card 3 -->
+      <div class="detail-card">
+        <img src="assets/svg/phone.svg" alt="Phone" />
+        <h2>Get in touch</h2>
+        <p>Telephone: <a href="tel:+18001234566">+1(800)123-4566</a></p>
+        <p>Email: <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+        <p><a href="#contact-form">Contact Form</a></p>
+      </div>
+    </div>
+  </section>
 
-    <!-- details section -->
-    <section class="contact-details py-5">
-      <div class="container details-container">
-        <!-- card 1 -->
-        <div class="detail-card">
-          <img src="assets/svg/clock.svg" alt="Clock" />
-          <h2>Open hours</h2>
-          <p>Mon-Fri: 9 AM - 6 PM</p>
-          <p>Saturday: 9 AM - 4 PM</p>
-          <p>Sunday: Closed</p>
-        </div>
-        <!-- card 2 -->
-        <div class="detail-card">
+  <!-- Google Map Section -->
+  <section class="map-section py-5">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4838231658596!2d-74.01293302397335!3d40.72937827139104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ed89cd27af%3A0xd8b2e2198a853b7d!2s176%20West%20St%2C%20New%20York%2C%20NY%2010014%2C%20USA!5e0!3m2!1sen!2sin!4v1748946891432!5m2!1sen!2sin"
+      width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact-us">
+    <div class="container">
+      <div class="left">
+        <h4 class="section-title" data-aos="fade-right" data-aos-delay="100">
+          Contact Us
+        </h4>
+        <h1 data-aos="fade-up" data-aos-delay="200">
+          Have questions? <br />
+          Get in touch!
+        </h1>
+        <p data-aos="fade-down-left" data-aos-delay="300">
+          Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim.
+        </p>
+        <div class="address-text" data-aos="fade-right" data-aos-delay="200">
           <img src="assets/svg/location.svg" alt="Location" />
-          <h2>Address</h2>
-          <p>176 W Street, New York,</p>
-          <p>NY 10014</p>
-          <p>
-            <a
-              href="https://www.google.com/maps?q=176+W+Street,+New+York,+NY+10014"
-              target="_blank"
-            >
-              Check Location
-            </a>
-          </p>
+          <span>785 15h Street, Office 478 Berlin</span>
         </div>
-        <!-- card 3 -->
-        <div class="detail-card">
-          <img src="assets/svg/phone.svg" alt="Phone" />
-          <h2>Get in touch</h2>
-          <p>Telephone: <a href="tel:+18001234566">+1(800)123-4566</a></p>
-          <p>Email: <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-          <p><a href="#contact-form">Contact Form</a></p>
+        <div class="address-text phone" data-aos="fade-right" data-aos-delay="300">
+          <img src="assets/svg/telephone.svg" alt="Phone" />
+          <a href="tel:+18001234566">+1(800)123-4566</a>
+        </div>
+        <div class="address-text" data-aos="fade-right" data-aos-delay="400">
+          <img src="assets/svg/mail.svg" alt="Mail" />
+          <a href="mailto:pentaverse.sa@gmail.com">info@thesignarch.com</a>
         </div>
       </div>
-    </section>
-
-    <!-- Google Map Section -->
-    <section class="map-section py-5">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4838231658596!2d-74.01293302397335!3d40.72937827139104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ed89cd27af%3A0xd8b2e2198a853b7d!2s176%20West%20St%2C%20New%20York%2C%20NY%2010014%2C%20USA!5e0!3m2!1sen!2sin!4v1748946891432!5m2!1sen!2sin"
-        width="100%"
-        height="100%"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-
-    <!-- Contact Us Section -->
-    <section class="contact-us">
-      <div class="container">
-        <div class="left">
-          <h4 class="section-title" data-aos="fade-right" data-aos-delay="100">
-            Contact Us
-          </h4>
-          <h1 data-aos="fade-up" data-aos-delay="200">
-            Have questions? <br />
-            Get in touch!
-          </h1>
-          <p data-aos="fade-down-left" data-aos-delay="300">
-            Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim.
-          </p>
-          <div class="address-text" data-aos="fade-right" data-aos-delay="200">
-            <img src="assets/svg/location.svg" alt="Location" />
-            <span>785 15h Street, Office 478 Berlin</span>
-          </div>
-          <div
-            class="address-text phone"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <img src="assets/svg/telephone.svg" alt="Phone" />
-            <a href="tel:+18001234566">+1(800)123-4566</a>
-          </div>
-          <div class="address-text" data-aos="fade-right" data-aos-delay="400">
-            <img src="assets/svg/mail.svg" alt="Mail" />
-            <a href="mailto:info@yoursite.com">info@yoursite.com</a>
-          </div>
-        </div>
-        <div class="right">
-          <form action="">
-            <div class="inputs-container">
-              <div class="input-wrapper">
-                <img src="assets/svg/user.svg" alt="" class="icon" />
-                <input type="text" placeholder="Name" class="input" />
-              </div>
-              <div class="input-wrapper">
-                <img src="assets/svg/mail.svg" alt="" class="icon" />
-                <input type="email" placeholder="Email Address" class="input" />
-              </div>
-            </div>
-            <div class="inputs-container">
-              <div class="input-wrapper">
-                <img src="assets/svg/telephone.svg" alt="" class="icon" />
-                <input type="text" placeholder="Phone" class="input" />
-              </div>
-              <div class="input-wrapper">
-                <img src="assets/svg/info.svg" alt="" class="icon" />
-                <input type="text" placeholder="Subject" class="input" />
-              </div>
+      <div class="right">
+        <form id="contact_form">
+          <div class="inputs-container">
+            <div class="input-wrapper">
+              <img src="assets/svg/user.svg" alt="" class="icon" />
+              <input type="text" name="name" placeholder="Name" class="input" required />
             </div>
             <div class="input-wrapper">
-              <img src="assets/svg/edit.svg" alt="" class="text-area-icon" />
-              <textarea
-                name=""
-                id=""
-                placeholder="Message"
-                rows="4"
-                class="input textarea"
-              ></textarea>
+              <img src="assets/svg/mail.svg" alt="" class="icon" />
+              <input type="email" name="email" placeholder="Email Address" class="input" required />
             </div>
-            <button class="submit-btn">Submit Now</button>
-          </form>
-        </div>
+          </div>
+          <div class="inputs-container">
+            <div class="input-wrapper">
+              <img src="assets/svg/telephone.svg" alt="" class="icon" />
+              <input type="text" name="phone" placeholder="Phone" class="input" />
+            </div>
+            <div class="input-wrapper">
+              <img src="assets/svg/info.svg" alt="" class="icon" />
+              <input type="text" name="subject" placeholder="Subject" class="input" />
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <img src="assets/svg/edit.svg" alt="" class="text-area-icon" />
+            <textarea name="message" placeholder="Message" rows="4" class="input textarea" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit Now</button>
+        </form>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- footer -->
-    <div id="footer"></div>
+  <!-- footer -->
+  <div id="footer"></div>
 
-    <script src="js/main.js"></script>
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <script src="js/main.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- <script>
+    // Initialize EmailJS with your PUBLIC KEY
+    emailjs.init("OX6aerExLVhuCSIcU"); // Replace with your actual public key
+  
+    // Form submission handler
+    document.getElementById('contact_form').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent default form submission
+  
+      emailjs.sendForm('service_ixtz8v8', 'template_xw96sbw', this)
+        .then(() => {
+          alert('Message sent successfully!');
+          this.reset(); // Optional: reset form after send
+        }, (error) => {
+          alert('Failed to send message:\n' + JSON.stringify(error));
+        });
+    });
+  </script> -->
+
+  <script>
+    document.getElementById("contact_form").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const data = {
+        name: form.name.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        subject: form.subject.value,
+        message: form.message.value,
+      };
+
+      try {
+        const response = await fetch("https://sign-arch-backend-production.up.railway.app/api/v1/contact-form/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+        alert(result.message || "Message sent successfully!");
+        form.reset();
+      } catch (error) {
+        alert("There was an error sending the message.");
+        console.error(error);
+      }
+    });
+  </script>
+
+
+</body>
+
 </html>
