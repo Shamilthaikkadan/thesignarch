@@ -1,10 +1,13 @@
 RewriteEngine On
 
-# Remove .html extension from URL
+# Redirect index.html or index.php to root URL
+RewriteCond %{THE_REQUEST} /index\.(html|php) [NC]
+RewriteRule ^(.*)index\.(html|php)$ /$1 [R=301,L]
+
+# Internally serve index.html or index.php if no file/folder is specified
+DirectoryIndex index.html index.php
+
+# Optional: Remove .html from other URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [L]
-
-# Optional: Redirect .html to extensionless URLs
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.*)\.html [NC]
-RewriteRule ^ %1 [R=301,L]
