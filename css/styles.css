@@ -1898,6 +1898,20 @@ a {
   color: #a19d9d;
   transition: all 0.3s ease;
 }
+.services-details .service-detils-wrapper span {
+  margin-top: 1.25rem;
+  font-weight: 400;
+  font-size: 15px;
+  color: #a19d9d;
+  transition: all 0.3s ease;
+}
+.contact-span {
+  margin-top: 1.25rem;
+  font-weight: 400;
+  font-size: 15px;
+  color: #a19d9d;
+  transition: all 0.3s ease;
+}
 
 @media screen and (max-width: 992px) {
   .services-details .service-detils-wrapper h2 {
@@ -1905,6 +1919,12 @@ a {
   }
 
   .services-details .service-detils-wrapper p {
+    font-size: 14px;
+  }
+  .services-details .service-detils-wrapper span {
+    font-size: 14px;
+  }
+  .contact-span {
     font-size: 14px;
   }
 }
@@ -1921,6 +1941,12 @@ a {
 
   .services-details .service-detils-wrapper p {
     font-size: 12px;
+  }
+  .services-details .service-detils-wrapper span {
+    font-size: 14px;
+  }
+  .contact-span {
+    font-size: 14px;
   }
 }
 
