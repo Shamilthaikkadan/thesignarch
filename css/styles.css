@@ -1530,6 +1530,18 @@ a {
   color: #ffffff;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #fff !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  transition: background-color 9999s ease-out !important;
+}
+
+
+
 .stay-connected .input::placeholder {
   color: #ffffff80;
 }
